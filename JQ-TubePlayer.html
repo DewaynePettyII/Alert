@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tube Player</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dist/jquery.tubeplayer.js"></script>
+</head>
+<body>
+    <div id="player"></div>
+    <script>
+        jQuery("#player").tubeplayer({
+        width: 600,  // the width of the player
+        height: 450, // the height of the player
+        allowFullScreen: "false", // true by default, allow user to go full screen
+        initialVideo: "5EnL2WXsxNQ", // the video that is loaded into the player
+        preferredQuality: "medium", // preferred quality: default, small, medium, large, hd720
+        autoPlay: true // whether the player should autoplay the video, 0 or 1
+    });
+    </script>
+    
+</body>
+</html>
